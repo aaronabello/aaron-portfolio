@@ -1324,10 +1324,18 @@
     }
 
     @media (max-width: 1040px) {
-      .resume-layout {
-        grid-template-columns: 1fr;
-      }
-    }
+  .resume-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .side-column {
+    order: 1;
+  }
+
+  .main-column {
+    order: 2;
+  }
+}
 
     @media (max-width: 900px) {
       .desktop-nav {
@@ -1850,7 +1858,7 @@
           <div class="gallery-header-wrap">
             <div class="gallery-header" style="margin-bottom: 0;">
               <h2 class="section-title">Gallery</h2>
-              <span class="gallery-note">Automatic portfolio showcase</span>
+              <span class="gallery-note">Portfolio showcase</span>
             </div>
           </div>
 
