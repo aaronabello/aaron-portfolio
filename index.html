@@ -1323,19 +1323,23 @@
       font-size: 0.9rem;
     }
 
+    .quick-profile-mobile {
+      display: none;
+    }
+
     @media (max-width: 1040px) {
-  .resume-layout {
-    grid-template-columns: 1fr;
-  }
+      .resume-layout {
+        grid-template-columns: 1fr;
+      }
 
-  .side-column {
-    order: 1;
-  }
+      .quick-profile-mobile {
+        display: block;
+      }
 
-  .main-column {
-    order: 2;
-  }
-}
+      .quick-profile-desktop {
+        display: none;
+      }
+    }
 
     @media (max-width: 900px) {
       .desktop-nav {
@@ -1509,6 +1513,32 @@
             </p>
           </section>
 
+          <section class="card section-card fade-up quick-profile-mobile">
+            <div class="section-header">
+              <h2 class="section-title">Quick Profile</h2>
+            </div>
+
+            <div class="quick-list">
+              <div class="quick-item">
+                <span class="quick-label">Focus</span>
+                <div class="quick-title">Software + UI</div>
+                <p class="side-text">Practical systems with clean presentation and usable structure.</p>
+              </div>
+
+              <div class="quick-item">
+                <span class="quick-label">Education</span>
+                <div class="quick-title">Southern Luzon State University</div>
+                <p class="side-text">Computer Engineering</p>
+              </div>
+
+              <div class="quick-item">
+                <span class="quick-label">Availability</span>
+                <div class="quick-title">Open to opportunities</div>
+                <p class="side-text">Academic, project, and portfolio collaborations.</p>
+              </div>
+            </div>
+          </section>
+
           <section id="experience" class="card section-card fade-up">
             <div class="section-header">
               <h2 class="section-title">Experience / Timeline</h2>
@@ -1621,7 +1651,7 @@
         </div>
 
         <aside class="side-column">
-          <section class="card section-card fade-up">
+          <section class="card section-card fade-up quick-profile-desktop">
             <div class="section-header">
               <h2 class="section-title">Quick Profile</h2>
             </div>
